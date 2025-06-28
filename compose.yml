@@ -3,6 +3,8 @@ version: "3"
 services:
   app:
     container_name: cont1
+    deploy:
+      replicas: 3
     image: varalu1/prjrepo:appimg
     ports:
       - "1122:80"
